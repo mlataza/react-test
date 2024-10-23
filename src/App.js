@@ -1,23 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import EditableTable from './EditableTable';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <EditableTable 
+        columns={['first name', 'last name']} 
+        initialData={[['Mikhael Glen', 'Lataza'], ['Marigold', 'Caitor']]} 
+        onUpdate={(data) => console.log(data)}/>
     </div>
   );
 }
