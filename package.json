@@ -40,5 +40,6 @@
   },
   "devDependencies": {
     "gh-pages": "^6.2.0"
-  }
+  },
+  "homepage": "http://mlataza.github.io/react-test"
 }
